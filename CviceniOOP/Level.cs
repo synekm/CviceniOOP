@@ -6,15 +6,13 @@ using System.Threading.Tasks;
 
 namespace CviceniOOP
 {
-    class Hrdina
+    class Level
     {
-        static private List<Hrdina> SeznamHrdinu;
+        public static int LevelHry;
 
-        private HP
-
-        public Hrdina()
+        int LevelVypocet()
         {
-
+            return (int)(); 
         }
     }
 }

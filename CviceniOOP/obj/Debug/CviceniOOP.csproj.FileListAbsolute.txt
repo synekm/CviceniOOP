@@ -1,0 +1,2 @@
+C:\Users\synekm\OneDrive\GitKraken\Project\CviceniOOP\CviceniOOP\CviceniOOP\obj\Debug\CviceniOOP.csprojAssemblyReference.cache
+C:\Users\synekm\OneDrive\GitKraken\Project\CviceniOOP\CviceniOOP\CviceniOOP\obj\Debug\CviceniOOP.csproj.CoreCompileInputs.cache

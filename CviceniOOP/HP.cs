@@ -8,22 +8,20 @@ namespace CviceniOOP
 {
     class HP
     {
-        static private HP
-
-        public int KonecneHP()
+        public float KonecneHPMonster()
         {
             int ZakladniHP = 10;
-            if (Level == null)
-                return (int)(ZakladniHP * 1);
+            if (Level.LevelHry == 1000)
+                return (int)(ZakladniHP);
             else
-                return (decimal)(ZakladniHP * 1 + Level / 2);
+                return (float)(ZakladniHP * 1 + (Level.LevelHry / 2));
             
         }
 
-        public int HrdinovoHP()
+        public float HrdinovoHP()
         {
-            int ZakladniHP = 100;
-            return (int)(ZakladniHP + Level);
+            int ZakladniHPHrdiny = 100;
+            return (float)(ZakladniHPHrdiny + Level.LevelHry);
         }
     }
 }

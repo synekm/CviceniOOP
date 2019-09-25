@@ -10,8 +10,10 @@ namespace CviceniOOP
     {
         static void Main(string[] args)
         {
-            Hrdina a = new Hrdina(new HP);
-            Monstrum a = new Monstrum(new HP);
+            Console.WriteLine("--------------Zacatek Boje--------------");
+
+            Hrdina a = new Hrdina(HP.HrdinovoHP);
+            Monstrum a1 = new Monstrum(HP.KonecneHPMonster);
         }
     }
 }

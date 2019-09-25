@@ -8,13 +8,21 @@ namespace CviceniOOP
 {
     class Monstrum
     {
-        static private List<Monstrum> SeznamMonster;
+        private int CisloMonstra = 0;
+        static public List<Monstrum> SeznamMonster;
 
 
 
-        public Monstrum(KonecneHP, Level)
+        public Monstrum()
         {
+            int CisloMonstra = 1;
+            for (int i = 0; i < SeznamMonster.Count; i++)
+            {
 
+                SeznamMonster[i].CisloMonstra = CisloMonstra;
+                CisloMonstra++;
+                Console.WriteLine(SeznamMonster[i].CisloMonstra);
+            }
         }
     }
 }

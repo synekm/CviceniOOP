@@ -1,2 +1,7 @@
 C:\Users\synekm\OneDrive\GitKraken\Project\CviceniOOP\CviceniOOP\CviceniOOP\obj\Debug\CviceniOOP.csprojAssemblyReference.cache
 C:\Users\synekm\OneDrive\GitKraken\Project\CviceniOOP\CviceniOOP\CviceniOOP\obj\Debug\CviceniOOP.csproj.CoreCompileInputs.cache
+C:\Users\synekm\OneDrive\GitKraken\Project\CviceniOOP\CviceniOOP\CviceniOOP\bin\Debug\CviceniOOP.exe.config
+C:\Users\synekm\OneDrive\GitKraken\Project\CviceniOOP\CviceniOOP\CviceniOOP\bin\Debug\CviceniOOP.exe
+C:\Users\synekm\OneDrive\GitKraken\Project\CviceniOOP\CviceniOOP\CviceniOOP\bin\Debug\CviceniOOP.pdb
+C:\Users\synekm\OneDrive\GitKraken\Project\CviceniOOP\CviceniOOP\CviceniOOP\obj\Debug\CviceniOOP.exe
+C:\Users\synekm\OneDrive\GitKraken\Project\CviceniOOP\CviceniOOP\CviceniOOP\obj\Debug\CviceniOOP.pdb

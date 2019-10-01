@@ -43,8 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Level.cs" />
-    <Compile Include="HP.cs" />
     <Compile Include="Hrdina.cs" />
     <Compile Include="Monstrum.cs" />
     <Compile Include="Program.cs" />

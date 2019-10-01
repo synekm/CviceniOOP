@@ -8,13 +8,38 @@ namespace CviceniOOP
 {
     class Hrdina
     {
-        static private List<Hrdina> SeznamHrdinu;
 
-        private HP
+        private int HP;
+        private int DMG;
 
-        public Hrdina()
+
+        public Hrdina(int HP, int DMG)
         {
+            this.HP = HP;
+            this.DMG = DMG;
+        }
 
+        public void DostalDMG(int DMG)
+        {
+            this.HP = this.HP - DMG;
+        }
+
+        public void Utoci(Monstrum monstrum)
+        {
+            monstrum.DostalDMG(this.DMG);
+        }
+
+        public string ZbyvajiciHP()
+        {
+            return "Hrdinovy zbiva " + this.HP + " HP.";
+        }
+
+        public bool JeMrtvy()
+        {
+            if (this.HP <= 0)
+                return true;
+            else
+                return false;
         }
     }
 }

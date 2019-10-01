@@ -8,21 +8,39 @@ namespace CviceniOOP
 {
     class Monstrum
     {
-        private int CisloMonstra = 0;
-        static public List<Monstrum> SeznamMonster;
 
 
+        private int HP;
+        private int DMG;
 
-        public Monstrum()
+        public Monstrum(int HP, int DMG)
         {
-            int CisloMonstra = 1;
-            for (int i = 0; i < SeznamMonster.Count; i++)
-            {
-
-                SeznamMonster[i].CisloMonstra = CisloMonstra;
-                CisloMonstra++;
-                Console.WriteLine(SeznamMonster[i].CisloMonstra);
-            }
+            this.HP = HP;
+            this.DMG = DMG;
         }
+
+        public void DostalDMG(int DMG)
+        {
+            this.HP = this.HP - DMG;
+        }
+
+        public void Utoci(Hrdina hrdina)
+        {
+            hrdina.DostalDMG(this.DMG);
+        }
+
+        public string ZbyvajiciHP()
+        {
+            return "Monstrum zbiva " + this.HP + " HP.";
+        }
+
+        public bool JeMrtve()
+        {
+            if (this.HP <= 0)
+                return true;
+            else
+                return false;
+        }
+        
     }
 }

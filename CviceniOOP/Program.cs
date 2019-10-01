@@ -35,6 +35,7 @@ namespace CviceniOOP
             if (hrdina.JeMrtvy() == true)
             {
                 Console.WriteLine("Hrdina zemrel.");
+                Console.WriteLine("--------------Konec Boje--------------");
                 Console.WriteLine("Hrdina zabil " + PocetZabitychMonster + " monster.");
                 Console.ReadLine();
             }

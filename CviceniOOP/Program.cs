@@ -10,7 +10,9 @@ namespace CviceniOOP
     {
         static void Main(string[] args)
         {
+            Console.WriteLine();
             Console.WriteLine("--------------Zacatek Boje--------------");
+            Console.WriteLine();
 
             int HPMonstra = 10;
 
@@ -35,7 +37,9 @@ namespace CviceniOOP
             if (hrdina.JeMrtvy() == true)
             {
                 Console.WriteLine("Hrdina zemrel.");
+                Console.WriteLine();
                 Console.WriteLine("--------------Konec Boje--------------");
+                Console.WriteLine();
                 Console.WriteLine("Hrdina zabil " + PocetZabitychMonster + " monster.");
                 Console.ReadLine();
             }

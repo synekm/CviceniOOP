@@ -20,13 +20,13 @@ namespace CviceniOOP
             Monstrum monstrum = new Monstrum(HPMonstra, 6);
             int PocetZabitychMonster = 0;
 
-            while (hrdina.JeMrtvy() == false)
+            while (hrdina.Mrtvy() == false)
             {
                 hrdina.Utoci(monstrum);
                 monstrum.Utoci(hrdina);
                 Console.WriteLine(monstrum.ZbyvajiciHP());
                 Console.WriteLine(hrdina.ZbyvajiciHP());
-                if (monstrum.JeMrtve() == true)
+                if (monstrum.Mrtvy() == true)
                 {
                     Console.WriteLine("Monstrum umrelo.");
                     monstrum = new Monstrum(++HPMonstra, 6);
@@ -34,7 +34,7 @@ namespace CviceniOOP
                 }
             }
             
-            if (hrdina.JeMrtvy() == true)
+            if (hrdina.Mrtvy() == true)
             {
                 Console.WriteLine("Hrdina zemrel.");
                 Console.WriteLine();

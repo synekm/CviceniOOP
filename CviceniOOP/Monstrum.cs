@@ -6,22 +6,12 @@ using System.Threading.Tasks;
 
 namespace CviceniOOP
 {
-    class Monstrum
+    class Monstrum:Bytost
     {
-
-
-        private int HP;
-        private int DMG;
-
         public Monstrum(int HP, int DMG)
         {
             this.HP = HP;
             this.DMG = DMG;
-        }
-
-        public void DostalDMG(int DMG)
-        {
-            this.HP = this.HP - DMG;
         }
 
         public void Utoci(Hrdina hrdina)
@@ -29,18 +19,9 @@ namespace CviceniOOP
             hrdina.DostalDMG(this.DMG);
         }
 
-        public string ZbyvajiciHP()
+        public override string ZbyvajiciHP()
         {
             return "Monstrum zbiva " + this.HP + " HP.";
         }
-
-        public bool JeMrtve()
-        {
-            if (this.HP <= 0)
-                return true;
-            else
-                return false;
-        }
-        
     }
 }

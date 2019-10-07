@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bytost.cs" />
     <Compile Include="Hrdina.cs" />
     <Compile Include="Monstrum.cs" />
     <Compile Include="Program.cs" />

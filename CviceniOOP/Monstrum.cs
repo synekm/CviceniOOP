@@ -8,10 +8,11 @@ namespace CviceniOOP
 {
     class Monstrum:Bytost
     {
-        public Monstrum(int HP, int DMG)
+        public Monstrum(int HP, int DMG, int Shield)
         {
             this.HP = HP;
             this.DMG = DMG;
+            this.Shield = Shield;
         }
 
         public void Utoci(Hrdina hrdina)
@@ -21,7 +22,7 @@ namespace CviceniOOP
 
         public override string ZbyvajiciHP()
         {
-            return "Monstrum zbiva " + this.HP + " HP.";
+            return "Monstrum zbiva " + this.HP + " HP a " + this.Shield + " stitu.";
         }
     }
 }

@@ -8,10 +8,11 @@ namespace CviceniOOP
 {
     class Hrdina:Bytost
     {
-        public Hrdina(int HP, int DMG)
+        public Hrdina(int HP, int DMG, int Shield)
         {
             this.HP = HP;
             this.DMG = DMG;
+            this.Shield = Shield;
         }
 
         public void Utoci(Monstrum monstrum)
@@ -21,7 +22,7 @@ namespace CviceniOOP
 
         public override string ZbyvajiciHP()
         {
-            return "Hrdinovy zbiva " + this.HP + " HP.";
+            return "Hrdinovy zbiva " + this.HP + " HP a " + this.Shield + " stitu.";
         }
     }
 }

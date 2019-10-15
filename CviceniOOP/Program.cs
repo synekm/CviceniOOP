@@ -10,39 +10,7 @@ namespace CviceniOOP
     {
         static void Main(string[] args)
         {
-            Console.WriteLine();
-            Console.WriteLine("--------------Zacatek Boje--------------");
-            Console.WriteLine();
-
-            int HPMonstra = 10;
-
-            Hrdina hrdina = new Hrdina(100, 12);
-            Monstrum monstrum = new Monstrum(HPMonstra, 6);
-            int PocetZabitychMonster = 0;
-
-            while (hrdina.Mrtvy() == false)
-            {
-                hrdina.Utoci(monstrum);
-                monstrum.Utoci(hrdina);
-                Console.WriteLine(monstrum.ZbyvajiciHP());
-                Console.WriteLine(hrdina.ZbyvajiciHP());
-                if (monstrum.Mrtvy() == true)
-                {
-                    Console.WriteLine("Monstrum umrelo.");
-                    monstrum = new Monstrum(++HPMonstra, 6);
-                    PocetZabitychMonster++;
-                }
-            }
-            
-            if (hrdina.Mrtvy() == true)
-            {
-                Console.WriteLine("Hrdina zemrel.");
-                Console.WriteLine();
-                Console.WriteLine("--------------Konec Boje--------------");
-                Console.WriteLine();
-                Console.WriteLine("Hrdina zabil " + PocetZabitychMonster + " monster.");
-                Console.ReadLine();
-            }
+            new Hra().SpustitHru();
         }
     }
 }

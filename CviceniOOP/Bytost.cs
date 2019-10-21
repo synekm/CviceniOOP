@@ -16,12 +16,12 @@ namespace CviceniOOP
         {
             if (this.Shield <= 0)
             {
-                this.HP = this.HP - DMG;
+                this.HP -= DMG;
                 this.Shield = 0;
             }
             else
             { 
-                this.Shield = this.Shield - DMG;
+                this.Shield -= DMG;
             }
         }
 
@@ -32,14 +32,7 @@ namespace CviceniOOP
 
         public bool Mrtvy()
         {
-            if (this.HP <= 0)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            return this.HP <= 0;
         }
     }
 }

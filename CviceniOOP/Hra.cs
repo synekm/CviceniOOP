@@ -35,12 +35,12 @@ namespace CviceniOOP
                 if (monstrum.Mrtvy() == true)
                 {
                     Console.WriteLine("Monstrum umrelo.");
-                    monstrum = new Monstrum(++HPMonstra, ++UtokMonstra, ShieldMonstra);
+                    monstrum = new Monstrum(++HPMonstra, ++UtokMonstra, ++ShieldMonstra);
                     PocetZabitychMonster++;
                 }
             }
 
-            if (hrdina.Mrtvy() == true)
+            if (hrdina.Mrtvy())
             {
                 Console.WriteLine("Hrdina zemrel.");
                 Console.WriteLine();

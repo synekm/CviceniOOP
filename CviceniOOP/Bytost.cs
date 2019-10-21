@@ -8,15 +8,16 @@ namespace CviceniOOP
 {
     class Bytost
     {
-        protected int HP;
-        protected int DMG;
-        protected int Shield;
+        public int HP { get; protected set; }
+        public int DMG { get; protected set; }
+        public int Shield { get; protected set; }
 
         public void DostalDMG(int DMG)
         {
             if (this.Shield <= 0)
             {
                 this.HP = this.HP - DMG;
+                this.Shield = 0;
             }
             else
             { 

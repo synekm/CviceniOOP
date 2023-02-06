@@ -1,1 +1,1 @@
-CviceniOOP
+Practising Object Oriented Programing.
